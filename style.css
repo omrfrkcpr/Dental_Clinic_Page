@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalam:wght@300&family=Open+Sans:wght@400;600&family=Poppins:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main-color: #ccad2f;
+  --bg-second-color: #342800;
+  --color-1: #f2db94;
+  --color-2: #f2e1ae;
+  --color-3: #73551f;
+  --color-4: #a67f38;
+  --color-5: #d9b573;
+  --text-color-1: #0c0c0d;
+  --text-color-1: #4b4a4d;
+  --text-color-1: #4f191f;
+  --text-color-1: #939296;
+  --text-color-1: #e8e6ed;
+
+  --ff-open: "Open Sans", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+  --ff-vibes: "Great Vibes", cursive;
+  --ff-kalam: "Kalam", cursive;
+}
