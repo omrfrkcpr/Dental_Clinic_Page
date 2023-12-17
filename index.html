@@ -25,12 +25,22 @@
   </head>
   <body>
     <!-- ------------------------------- -->
+    <!--             HEADER              -->
+    <!-- ------------------------------- -->
+
+    <header>
+      <div class="header-iconTop">
+        <a href="#homepage"><i class="bx fa fa-arrow-circle-up"></i></a>
+      </div>
+    </header>
+
+    <!-- ------------------------------- -->
     <!--             NAVBAR              -->
     <!-- ------------------------------- -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand d-flex" href="#home">
+        <a class="navbar-brand d-flex" href="#homepage">
           <img src="assets/logo.png" class="img-fluid ms-3" alt="logo" />
           <p class="fs-4 mt-4 me-3 fw-bold">My Dental Clinic</p>
         </a>
@@ -50,21 +60,23 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
             <li class="nav-item">
               <a
-                class="nav-link nav-hover active"
+                class="nav-link nav-hover mt-2"
                 aria-current="page"
                 href="#homepage"
                 >HOMEPAGE</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hover" href="#treatments">TREATMENTS</a>
+              <a class="nav-link nav-hover mt-2" href="#treatments"
+                >TREATMENTS</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hover" href="#contact">CONTACT</a>
+              <a class="nav-link nav-hover mt-2" href="#contact">CONTACT</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link nav-hover dropdown-toggle"
+                class="nav-link nav-hover dropdown-toggle mt-2 me-1"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -82,8 +94,11 @@
               </ul>
             </li>
             <li class="nav-item">
-              <button class="ms-3 border-0 rounded-5">
-                <a href="#" class="nav-link nav-button" target="_blank"
+              <button class="ms-0 border-0 rounded-5 btn h-100">
+                <a
+                  href="#"
+                  class="nav-link nav-button border rounded-5 border-2 border-secondary-subtle pe-2 ps-2"
+                  target="_blank"
                   ><i
                     class="bi bi-calendar me-1"
                     style="font-size: 1em; color: #f2e1ae"
@@ -133,7 +148,7 @@
               alt="..."
             />
             <div class="carousel-caption d-none d-md-block pe-4">
-              <h5>Ihre DentalPraxis</h5>
+              <h5>My Dental Clinic</h5>
               <p>Anything for a beautiful smile</p>
             </div>
           </div>
@@ -196,276 +211,753 @@
     <!--           TREATMENTS            -->
     <!-- ------------------------------- -->
 
-    <section class="container-fluid pt-5" id="treatments">
-      <h3 class="text-center">Treatments</h3>
-        <ul class="nav nav-pills mb-3 m-5" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#gd-images"
-              type="button"
-              role="tab"
-              fdprocessedid="7134jg"
-              aria-selected="true"
-            >
-              General Dentistry
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#ed-images"
-              type="button"
-              role="tab"
-              fdprocessedid="8z5x8e"
-              aria-selected="false"
-              tabindex="-1"
-            >
-              Esthetic Dentistry
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#ortho-images"
-              type="button"
-              role="tab"
-              fdprocessedid="juyd7"
-              aria-selected="false"
-              tabindex="-1"
-            >
-              Orthodontics
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#oral-images"
-              type="button"
-              role="tab"
-              fdprocessedid="juyd7"
-              aria-selected="false"
-              tabindex="-1"
-            >
-              Oral Surgery
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="gd-images"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab"
-            tabindex="0"
+    <section class="container-fluid pt-5 pb-5" id="treatments">
+      <h2 class="text-center">Treatments</h2>
+      <ul
+        class="nav nav-pills mb-5 m-5 d-flex justify-content-center"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item me-3 mb-3 ms-3" role="presentation">
+          <button
+            class="nav-link active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#gd-images"
+            type="button"
+            role="tab"
+            fdprocessedid="7134jg"
+            aria-selected="true"
           >
-            <div class="row g-3">
-              <div class="col-md-6 col-lg-3">
-                <p>Root Canal Treatment</p>
-                <a data-fslightbox="" href="./img/thumbnail/fs1.jpg">
-                  <img
-                    src="./img/thumbnail/fs1.jpg"
-                    class="img-thumbnail"
-                    alt="gd1"
-                  />
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Dental Bridges</p>
-                <a data-fslightbox="" href="./img/thumbnail/fs2.jpg">
-                  <img
-                    src="./img/thumbnail/fs2.jpg"
-                    class="img-thumbnail"
-                    alt="gd2"
-                  />
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Composite Filling</p>
-                <a data-fslightbox="" href="./img/thumbnail/fs3.jpg">
-                  <img
-                    src="./img/thumbnail/fs3.jpg"
-                    class="img-thumbnail"
-                    alt="gd3"
-                  />
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Fluoride Varnish</p>
-                <a data-fslightbox="" href="./img/thumbnail/fs4.jpg">
-                  <img
-                    src="./img/thumbnail/fs4.jpg"
-                    class="img-thumbnail"
-                    alt="gd4"
-                  />
-                </a>
-              </div>
+            General Dentistry
+          </button>
+        </li>
+        <li class="nav-item me-3 mb-3 ms-3" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#ed-images"
+            type="button"
+            role="tab"
+            fdprocessedid="8z5x8e"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            Esthetic Dentistry
+          </button>
+        </li>
+        <li class="nav-item me-3 mb-3 ms-3" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#o-images"
+            type="button"
+            role="tab"
+            fdprocessedid="juyd7"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            Orthodontics
+          </button>
+        </li>
+        <li class="nav-item me-3 mb-3 ms-3" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#os-images"
+            type="button"
+            role="tab"
+            fdprocessedid="juyd7"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            Oral Surgery
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content text-center pb-3 me-5 ms-5" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="gd-images"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+          tabindex="0"
+        >
+          <div class="row g-3 text-center">
+            <div class="col-md-6 col-lg-3">
+              <p>Root Canal Treatment</p>
+              <a data-fslightbox="" href="assets/thumbnail/gd1.jpg">
+                <img
+                  src="assets/thumbnail/gd1.jpg"
+                  class="img-thumbnail"
+                  alt="gd1"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Dental Bridges</p>
+              <a data-fslightbox="" href="assets/thumbnail/gd2.jpg">
+                <img
+                  src="assets/thumbnail/gd2.jpeg"
+                  class="img-thumbnail"
+                  alt="gd2"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Composite Filling</p>
+              <a data-fslightbox="" href="assets/thumbnail/gd3.jpg">
+                <img
+                  src="assets/thumbnail/gd3.jpg"
+                  class="img-thumbnail"
+                  alt="gd3"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Fluoride Varnish</p>
+              <a data-fslightbox="" href="assets/thumbnail/gd4.jpg">
+                <img
+                  src="assets/thumbnail/gd4.jpg"
+                  class="img-thumbnail"
+                  alt="gd4"
+                  width="250px"
+                />
+              </a>
             </div>
           </div>
+        </div>
 
-          <div
-            class="tab-pane fade"
-            id="ds-images"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-            tabindex="0"
-          >
-            <div class="row g-3">
-              <div class="col-md-6 col-lg-3">
-                <p>Veneer</p>
-                <a data-fslightbox="" href="./img/thumbnail/ds1.jpg">
-                  <img
-                    src="./img/thumbnail/ds1.jpg"
-                    class="img-thumbnail"
-                    alt="ds1"
-                  />
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Teeth Whitening</p>
-                <a data-fslightbox="" href="./img/thumbnail/ds2.jpg">
-                  <img
-                    src="./img/thumbnail/ds2.jpg"
-                    class="img-thumbnail"
-                    alt="ds2"
-                  />
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Smile Design</p>
-                <a data-fslightbox="" href="./img/thumbnail/ds3.jpg">
-                  <img
-                    src="./img/thumbnail/ds3.jpg"
-                    class="img-thumbnail"
-                    alt="ds3"
-                  />
-                </a>
-              </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Bonding</p>
-                <a data-fslightbox="" href="./img/thumbnail/ds4.jpg">
-                  <img
-                    src="./img/thumbnail/ds4.jpg"
-                    class="img-thumbnail"
-                    alt="ds4"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
+        <div
           class="tab-pane fade"
-          id="ds-images"
+          id="ed-images"
           role="tabpanel"
           aria-labelledby="pills-profile-tab"
           tabindex="0"
         >
-          <div class="row g-3">
+          <div class="row g-3 text-center">
+            <div class="col-md-6 col-lg-3">
+              <p>Porcelain Veneers</p>
+              <a data-fslightbox="" href="assets/thumbnail/ed1.png">
+                <img
+                  src="assets/thumbnail/ed1.png"
+                  class="img-thumbnail"
+                  alt="ed1"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Teeth Whitening</p>
+              <a data-fslightbox="" href="assets/thumbnail/ed2.jpeg">
+                <img
+                  src="assets/thumbnail/ed2.jpeg"
+                  class="img-thumbnail"
+                  alt="ed2"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Smile Design</p>
+              <a data-fslightbox="" href="assets/thumbnail/ed3.jpg">
+                <img
+                  src="assets/thumbnail/ed3.jpg"
+                  class="img-thumbnail"
+                  alt="ed3"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Bonding</p>
+              <a data-fslightbox="" href="assets/thumbnail/ed4.jpg">
+                <img
+                  src="assets/thumbnail/ed4.jpg"
+                  class="img-thumbnail"
+                  alt="ed4"
+                  width="250px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="tab-pane fade"
+          id="o-images"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <div class="row g-3 text-center">
             <div class="col-md-6 col-lg-3">
               <p>Invisalign</p>
-              <a data-fslightbox="" href="./img/thumbnail/ds1.jpg">
+              <a data-fslightbox="" href="assets/thumbnail/o1.jpg">
                 <img
-                  src="./img/thumbnail/ds1.jpg"
+                  src="assets/thumbnail/o1.jpg"
                   class="img-thumbnail"
                   alt="o1"
+                  width="250px"
                 />
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <p>Ceramic Braces</p>
-              <a data-fslightbox="" href="./img/thumbnail/ds2.jpg">
+              <a data-fslightbox="" href="assets/thumbnail/o2.jpeg">
                 <img
-                  src="./img/thumbnail/ds2.jpg"
+                  src="assets/thumbnail/o2.jpeg"
                   class="img-thumbnail"
                   alt="o2"
+                  width="250px"
                 />
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <p>Lingual Braces</p>
-              <a data-fslightbox="" href="./img/thumbnail/ds3.jpg">
+              <a data-fslightbox="" href="assets/thumbnail/o3.jpg">
                 <img
-                  src="./img/thumbnail/ds3.jpg"
+                  src="assets/thumbnail/o3.jpg"
                   class="img-thumbnail"
                   alt="o3"
+                  width="250px"
                 />
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <p>Orthognathic Surgery</p>
-              <a data-fslightbox="" href="./img/thumbnail/ds4.jpg">
+              <a data-fslightbox="" href="assets/thumbnail/o4.jpg">
                 <img
-                  src="./img/thumbnail/ds4.jpg"
+                  src="assets/thumbnail/o4.jpg"
                   class="img-thumbnail"
                   alt="o4"
+                  width="250px"
                 />
               </a>
             </div>
           </div>
         </div>
 
+        <div
+          class="tab-pane fade"
+          id="os-images"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+          tabindex="0"
+        >
+          <div class="row g-3 text-center">
+            <div class="col-md-6 col-lg-3">
+              <p>Tooth Extractions</p>
+              <a data-fslightbox="" href="assets/thumbnail/os1.jpg">
+                <img
+                  src="assets/thumbnail/os1.jpg"
+                  class="img-thumbnail"
+                  alt="os1"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Dental Implants</p>
+              <a data-fslightbox="" href="assets/thumbnail/os2.jpg">
+                <img
+                  src="assets/thumbnail/os2.jpg"
+                  class="img-thumbnail"
+                  alt="os2"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Bichektomie</p>
+              <a data-fslightbox="" href="assets/thumbnail/os3.png">
+                <img
+                  src="assets/thumbnail/os3.png"
+                  class="img-thumbnail"
+                  alt="os3"
+                  width="250px"
+                />
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <p>Gummy Smile Treatments</p>
+              <a data-fslightbox="" href="assets/thumbnail/os4.jpg">
+                <img
+                  src="assets/thumbnail/os4.jpg"
+                  class="img-thumbnail"
+                  alt="os4"
+                  width="250px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------- -->
+    <!--              TEAM               -->
+    <!-- ------------------------------- -->
+
+    <section class="container-fluid pt-5" id="team">
+      <h2 class="text-center text-white pb-3">Meet The Dental Team</h2>
+      <div class="container">
+        <div class="row justify-content-between g-2">
           <div
-            class="tab-pane fade"
-            id="dev-images"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-            tabindex="0"
+            class="col col-sm-12 col-md-6 col-lg-4 col-xl-2 bg-body-secondary col-second border border-2"
           >
-            <div class="row g-3">
-              <div class="col-md-6 col-lg-3">
-                <p>Tooth Extractions</p>
-                <a data-fslightbox="" href="./img/thumbnail/ops1.jpg">
-                  <img
-                    src="./img/thumbnail/ops1.jpg"
-                    class="img-thumbnail"
-                    alt="os1"
-                  />
-                </a>
+            <img src="assets/doc.jpeg" alt="" />
+            <div class="info">
+              <h3>Adolf Ulrike</h3>
+              <p>Clinical Director</p>
+              <div class="social">
+                <a href=""
+                  ><i class="bi bi-facebook" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-google" style="font-size: 1em"></i
+                ></a>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Dental Implants</p>
-                <a data-fslightbox="" href="./img/thumbnail/ops2.jpg">
-                  <img
-                    src="./img/thumbnail/ops2.jpg"
-                    class="img-thumbnail"
-                    alt="os2"
-                  />
-                </a>
+            </div>
+          </div>
+          <div
+            class="col col-sm-12 col-md-6 col-lg-4 col-xl-2 bg-body-secondary col-second border border-2"
+          >
+            <img src="assets/doc1.jpeg" alt="" />
+            <div class="info">
+              <h3>Daniel Julia</h3>
+              <p>Dentist</p>
+              <div class="social">
+                <a href=""
+                  ><i class="bi bi-facebook" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-google" style="font-size: 1em"></i
+                ></a>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Jaw Surgeries</p>
-                <a data-fslightbox="" href="./img/thumbnail/ops3.jpg">
-                  <img
-                    src="./img/thumbnail/ops3.jpg"
-                    class="img-thumbnail"
-                    alt="os3"
-                  />
-                </a>
+            </div>
+          </div>
+          <div
+            class="col col-sm-12 col-md-6 col-lg-4 col-xl-2 bg-body-secondary col-second border border-2"
+          >
+            <img src="assets/doc2.jpeg" alt="" />
+            <div class="info">
+              <h3>Gisa Rosmarie</h3>
+              <p>Dentist</p>
+              <div class="social">
+                <a href=""
+                  ><i class="bi bi-facebook" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-google" style="font-size: 1em"></i
+                ></a>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <p>Gummy Smile Treatments</p>
-                <a data-fslightbox="" href="./img/thumbnail/ops4.jpg">
-                  <img
-                    src="./img/thumbnail/ops4.jpg"
-                    class="img-thumbnail"
-                    alt="os4"
-                  />
-                </a>
+            </div>
+          </div>
+          <div
+            class="col col-sm-12 col-md-6 col-lg-4 col-xl-2 bg-body-secondary col-second border border-2"
+          >
+            <img src="assets/doc3.jpeg" alt="" />
+            <div class="info">
+              <h3>Janina Ilsa</h3>
+              <p>Dental Assistant</p>
+              <div class="social">
+                <a href=""
+                  ><i class="bi bi-facebook" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-google" style="font-size: 1em"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col col-sm-12 col-md-6 col-lg-4 col-xl-2 bg-body-secondary col-second border border-2"
+          >
+            <img src="assets/doc4.jpeg" alt="" />
+            <div class="info">
+              <h3>Ida Felix</h3>
+              <p>Dental Hygienist</p>
+              <div class="social">
+                <a href=""
+                  ><i class="bi bi-facebook" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-google" style="font-size: 1em"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col col-sm-12 col-md-6 col-lg-4 col-xl-2 bg-body-secondary col-second border border-2"
+          >
+            <img src="assets/doc5.jpeg" alt="" />
+            <div class="info">
+              <h3>Rupert Lukas</h3>
+              <p>Dental Hygienist</p>
+              <div class="social">
+                <a href=""
+                  ><i class="bi bi-facebook" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-instagram" style="font-size: 1em"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-google" style="font-size: 1em"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
+
+    <!-- ------------------------------- -->
+    <!--           OFFICE TOUR           -->
+    <!-- ------------------------------- -->
+
+    <section class="carousel1 pb-5" id="office">
+      <h2 class="text-center pt-5 pb-4">Office Tour</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <p>Entrance</p>
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office1.jpg" class="img-fluid" alt="office1" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <p>Waiting Room</p>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office2.jpg" class="img-fluid" alt="office2" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <p>Treatment Room 1</p>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office3.jpg" class="img-fluid" alt="office3" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <p>Treatment Room 2</p>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office4.jpg" class="img-fluid" alt="office4" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              <p>Treatment Room 3</p>
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office5.jpg" class="img-fluid" alt="office5" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+            >
+              <p>Surgery Operation Room</p>
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office6.jpg" class="img-fluid" alt="office6" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven"
+              aria-expanded="false"
+              aria-controls="collapseSeven"
+            >
+              <p>X-Ray Room</p>
+            </button>
+          </h2>
+          <div
+            id="collapseSeven"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office7.jpg" class="img-fluid" alt="office7" />
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseEight"
+              aria-expanded="false"
+              aria-controls="collapseEight"
+            >
+              <p>Coffee Area</p>
+            </button>
+          </h2>
+          <div
+            id="collapseEight"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <img src="assets/office8.jpg" class="img-fluid" alt="office8" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------- -->
+    <!--              BLOG               -->
+    <!-- ------------------------------- -->
+
+    <section class="container-fluid w-100 pb-5" id="blog">
+      <h2 class="text-center pt-5 pb-5">Our Blogs</h2>
+      <div
+        class="container w-75 cards m-auto p-3 justify-content-between row g-3 flex-wrap"
+      >
+        <div
+          class="card col col-sm-12 col-md-6 col-lg-3"
+          style="min-width: 50%"
+        >
+          <img
+            src="assets/thumbnail/blog1.jpeg"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Breastfeeding Week: How does breastfeeding affect oral health?
+            </h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        <div
+          class="card col col-sm-12 col-md-6 col-lg-3"
+          style="min-width: 50%"
+        >
+          <img
+            src="assets/thumbnail/blog2.jpeg"
+            class="card-img-top"
+            alt="blog2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Stop smoking and save your health!</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        <div
+          class="card col col-sm-12 col-md-6 col-lg-3"
+          style="min-width: 50%"
+        >
+          <img
+            src="assets/thumbnail/blog3.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              Top money saving tips for your oral health
+            </h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        <div
+          class="card col col-sm-12 col-md-6 col-lg-3"
+          style="min-width: 50%"
+        >
+          <img
+            src="assets/thumbnail/blog4.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">
+              How thumb-sucking can be detrimental for children’s oral health
+            </h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------- -->
+    <!--             CONTACT             -->
+    <!-- ------------------------------- -->
+
+    <section></section>
+
+    <!-- ------------------------------- -->
+    <!--             FOOTER              -->
+    <!-- ------------------------------- -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

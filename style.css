@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 :root {
   --bg-main-color: #ccad2f;
   --bg-second-color: #342800;
@@ -17,6 +21,7 @@
   --text-color-1: #0c0c0d;
   --text-color-1: #4b4a4d;
   --text-color-1: #4f191f;
+  --img-bg-color: #61282e;
   --text-color-1: #939296;
   --text-color-1: #e8e6ed;
 
@@ -27,15 +32,46 @@
 }
 
 /* ---------------------------------- */
+/*               HEADER               */
+/* ---------------------------------- */
+
+.header-iconTop a {
+  background: var(--color-3);
+  padding: 0.3rem;
+  border-radius: 0.8rem;
+  position: fixed;
+  z-index: 1;
+  top: 94vh;
+  right: 10px;
+  transition: 0.3s ease;
+}
+
+.header-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--color-1);
+}
+
+.header-iconTop a:hover {
+  border-style: double;
+  border-color: var(--color-3);
+  background-color: var(--color-1);
+  transform: scale(1.01);
+}
+
+.header-iconTop a i:hover {
+  color: var(--color-3);
+}
+
+/* ---------------------------------- */
 /*               NAVBAR               */
 /* ---------------------------------- */
 
 .container-fluid {
-  background-color: var(--color-2);
+  background-color: var(--color-3);
 }
 
 .container-fluid .navbar-brand:hover {
-  transform: scale(1.03) !important;
+  transform: scale(1.01) !important;
   box-shadow: 0px 0px 10px black;
 }
 
@@ -48,13 +84,17 @@
   color: var(--bg-main-color);
 }
 
+.nav-item .nav-hover {
+  color: var(--color-2);
+}
+
 .nav-item .nav-hover:hover {
-  color: #4f191f !important;
+  color: black !important;
   font-weight: 500;
   transition-duration: 0.3s;
 }
 
-.nav-item button {
+.nav-item .btn a {
   animation: shadow 1s alternate infinite;
   background-color: var(--color-3);
 }
@@ -69,9 +109,17 @@
   transform: scale(1.01);
 }
 
+.dropdown-menu {
+  background-color: var(--color-3);
+}
+
+.dropdown-menu a {
+  color: var(--color-2);
+}
+
 @keyframes shadow {
   100% {
-    box-shadow: 0px 0px 20px #6e5607;
+    box-shadow: 0px 0px 20px #bd9922;
   }
 }
 
@@ -87,14 +135,169 @@
   bottom: 5rem;
 }
 
+.carousel-caption p {
+  font-size: 0.8rem;
+}
+
 /* ---------------------------------- */
 /*             TREATMENTS             */
 /* ---------------------------------- */
 
-section.container {
+section.container-fluid {
   background-color: var(--color-2);
 }
 
-section.container h3 {
+section.container-fluid h2 {
   color: var(--color-4);
 }
+
+#treatments .nav-pills .nav-link.active {
+  background-color: var(--img-bg-color);
+}
+
+#treatments .img-thumbnail {
+  background-color: var(--img-bg-color);
+}
+
+.row {
+  color: var(--bg-second-color);
+  font-size: 1rem;
+}
+
+.row img {
+  height: 200px;
+}
+
+.row p {
+  font-weight: 500;
+}
+
+section.container-fluid button {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  width: 180px;
+}
+
+section.container-fluid button:hover {
+  background-color: var(--color-2);
+  color: var(--color-3);
+}
+
+/* ---------------------------------- */
+/*                TEAM                */
+/* ---------------------------------- */
+
+#team {
+  background-color: #ebb170ad;
+}
+
+#team .col-second {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--color-2) !important;
+}
+
+#team .col-second:hover {
+  border: 2 black;
+}
+
+#team .container {
+  padding-bottom: 5rem;
+}
+
+#team .col-second img {
+  border-radius: 20px;
+  width: 175px;
+}
+
+#team .col-second img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
+}
+
+#team .social a {
+  color: var(--color-3);
+  padding: 0 0.3rem;
+}
+
+#team .social a:hover {
+  color: black;
+  opacity: 0.7;
+}
+
+/* ---------------------------------- */
+/*             OFFICE TOUR            */
+/* ---------------------------------- */
+
+#office h2 {
+  color: var(--color-3);
+  background-color: var(--color-2);
+}
+
+#office {
+  background-color: var(--color-2);
+}
+
+#office h5 {
+  background-color: rgba(128, 128, 128, 0.484);
+  width: 300px;
+  border-radius: 20px;
+}
+
+#office .accordion {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  background-color: var(--color-2);
+}
+
+#office .accordion-button p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+#office .accordion-button p:hover {
+  color: var(--bg-second-color);
+  transition-duration: 0.5s;
+}
+
+#office .accordion-button {
+  background-color: var(--color-5);
+}
+
+/* ---------------------------------- */
+/*                BLOG                */
+/* ---------------------------------- */
+
+#blog .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#blog .card {
+  opacity: 0.5;
+}
+
+#blog .card:hover {
+  opacity: 1;
+  transition-duration: 0.5s;
+  transform: scale(1.03);
+}
+
+#blog {
+  background-color: var(--color-5);
+}
+
+/* ---------------------------------- */
+/*               CONTACT              */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/*               FOOTER               */
+/* ---------------------------------- */
