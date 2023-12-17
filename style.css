@@ -255,6 +255,10 @@ section.container-fluid button:hover {
   background-color: var(--color-2);
 }
 
+#office img {
+  margin: auto;
+}
+
 #office .accordion-button p {
   width: 100%;
   margin: auto;
@@ -412,3 +416,11 @@ img {
 /* ---------------------------------- */
 /*               FOOTER               */
 /* ---------------------------------- */
+
+footer {
+  background-color: var(--color-4) !important;
+}
+
+footer a {
+  color: white;
+}
