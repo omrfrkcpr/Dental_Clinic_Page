@@ -1,6 +1,6 @@
 # Dental_Clinic_Page
 
-https://omrfrkcpr.github.io/Home_Furnishing/
+https://omrfrkcpr.github.io/Dental_Clinic_Page/
 
 ## Description
 
@@ -25,6 +25,8 @@ Dental_Clinic_Page (folder)
 ```
 
 ## Expected Outcome
+
+![ezgif-3-529bd74e9d](https://github.com/omrfrkcpr/Dental_Clinic_Page/assets/77440899/93a90b59-e90b-41d7-8290-a6eafd0ef10f)
 
 ## Objective
 
