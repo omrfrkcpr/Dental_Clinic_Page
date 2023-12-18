@@ -41,8 +41,8 @@ body {
   border-radius: 0.8rem;
   position: fixed;
   z-index: 1;
-  top: 92vh;
-  right: 10px;
+  bottom: 1rem;
+  right: 1rem;
   transition: 0.3s ease;
 }
 
@@ -66,8 +66,8 @@ body {
 /*               NAVBAR               */
 /* ---------------------------------- */
 
-.container-fluid {
-  background-color: var(--color-3);
+.navbar {
+  background-color: #73561fbc !important;
 }
 
 .container-fluid .navbar-brand:hover {
