@@ -31,6 +31,10 @@ body {
   --ff-kalam: "Kalam", cursive;
 }
 
+section {
+  scroll-margin-top: 85px;
+}
+
 /* ---------------------------------- */
 /*               HEADER               */
 /* ---------------------------------- */
