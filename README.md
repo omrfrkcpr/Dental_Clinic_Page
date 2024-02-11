@@ -24,13 +24,11 @@ Dental_Clinic_Page (folder)
 |----lib
 ```
 
-## Expected Outcome
+## Outcome
 
 ![ezgif-3-529bd74e9d](https://github.com/omrfrkcpr/Dental_Clinic_Page/assets/77440899/93a90b59-e90b-41d7-8290-a6eafd0ef10f)
 
-## Objective
-
-### At the end of the project, following topics are to be covered;
+### At the end of the project, following topics are covered;
 
 - HTML5 / CSS3 / Bootstrap
 
@@ -40,7 +38,7 @@ Dental_Clinic_Page (folder)
 
 - CSS Setting height and width-CSS Outline-CSS Combinators
 
-### At the end of the project, you will be able to;
+### At the end of the project, will be able to;
 
 - improve coding skills within HTML & CSS inckl. Bootstrap
 
